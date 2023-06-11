@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Management</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="typeheet" href="type.html">
+    <link rel="stylesheet" href="type.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abel&family=Poppins:ital,wght@1,300&family=Roboto:wght@100&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abel&family=Montserrat:ital,wght@1,300&family=Open+Sans&family=Poppins:ital,wght@1,300&family=Roboto:wght@100&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+</head>
+
+</head>
+
+<body>
+    <nav id="navbar">
+        <header class="header">
+            <div class="left">
+                <img src="images.png" alt="">
+            </div>
+            <div class="mid">
+
+                <ul class="navbar">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#types">Events</a></li>
+                    <li><a href="previous.html">Our Previous Events</a></li>
+                    <li><a href="abt.html">About Us</a></li>
+                    <li><a href="#footer">Contact Us</a></li>
+                </ul>
+
+            </div>
+
+    </nav>
+    </section>
+    <section id="contanier">
+        <h1>YourStory Welcomes You </h1>
+        <form action="http://localhost:3000/index.php" method="post">
+            <div class="form">
+                <input type="text" name="name" placeholder="Enter Your Name">
+            </div>
+            <div class="form">
+                <input type="text" id="dob" placeholder="Enter Your DOB" name="dob">
+
+            </div>
+
+            <div class="form">
+                <!-- <input type="text" name="" placeholder="Enter Your Gender"> -->
+                <lable for="gender"></lable>
+                <input type="text" placeholder="Enter Gender" name="gender">
+            </div>
+            <div class="form">
+                <input type="text" id="num" placeholder="Enter Your Contact No." name="number">
+            </div>
+            <div class="form">
+                <input type="text"  placeholder="Enter Your Email Address" name="email">
+            </div>
+            <div class="form">
+                <input type="text"  placeholder="Enter Your Address" name="address">
+                
+                <p class="result" style="color: white;"> Result: <span id="result"></span>
+
+            </div>
+            <input type="button" value="Check" class="btn" onclick="validate()">
+            <!-- <script src="script.js"></script> -->
+
+            <input type="submit" value="Submit" class="btn"> 
+            <button class="btn" type="reset">Reset</button>
+            <!-- <input type="reset" value="reset now"> -->
+        </form>
+    </section>
+
+    <section id="types">
+        <h1>
+            YourStory Events
+        </h1>
+        <div class="box3" id="services">
+            <div class="inner" id="1">
+                <h3> Birthday</h3>
+                <img
+                    src="https://media.istockphoto.com/photos/birthday-cake-with-happy-birthday-banner-picture-id1201202312?k=20&m=1201202312&s=612x612&w=0&h=JA1f22KxeNzkF2UFZdrqrXHsoqTmsThJoawJbbTqbAI=">
+                <p>
+                    Cheers for another trip around the sun!.Make your close ones birthday memorable.
+                </p>
+                <a href="birth/birth.html">View</a>
+            </div>
+            <div class="inner">
+                <h3>
+                    Wedding
+                </h3>
+                <img
+                    src="https://images.news18.com/ibnlive/uploads/2022/04/wedding-16512057823x2.jpg?impolicy=website&width=510&height=356">
+                <p>
+                    A happy marriage is a long conversation which always seems too short.
+                </p>
+                <a href="wedding/wedding.html">View</a>
+            </div>
+            <div class="inner">
+                <h3>
+                    Engagement
+                </h3>
+                <img src="https://www.shaadidukaan.com/vogue/wp-content/uploads/2020/01/Wedding-Ink.jpg" alt="">
+                <p>
+                    Love recognises no barriers, it jumps hurdles, leaps fences, penetrates walls to arrive at its
+                    destination, full of hope.
+                </p>
+                <a href="enga/enga.html">View</a>
+            </div>
+        </div>
+        <div class="box1">
+            <div class="inner">
+                <h3>
+                    Naming Ceremony
+                </h3>
+                <img src="https://www.kveller.com/wp-content/uploads/2019/05/feet.jpg" alt="">
+                <p>
+                    A good Name is more desirable than great riches,to be esteemed is &nbspbetter than Silver or Gold.
+                </p>
+                <a href="naming/naming.html">View</a>
+            </div>
+            <div class="inner">
+                <h3>
+                    House Warming Ceremony
+                </h3>
+                <img src="https://i0.wp.com/decorsutrablog.com/wp-content/uploads/2020/06/Decorsutra_HomeBasedEvents_floraindiadesigns4-1.jpg?fit=1070%2C774&ssl=1"
+                    alt="">
+                <p>
+                    Love and Laughter lights your days and warm your heart and house.
+                </p>
+                <a href="house/house.html">View</a>
+            </div>
+            <div class="inner">
+                <h3>
+                    Festival
+                </h3>
+                <img src="https://cdn.dnaindia.com/sites/default/files/styles/full/public/2021/11/04/1003926-diwali-ani.jpg"
+                    alt="">
+                <p>
+                    Celebrate it with your loved ones. Only memories last forever. &nbspCollect them.....
+                </p>
+                <a href="festival/festival.html">View</a>
+            </div>
+        </div>
+    </section>
+   
+
+    <section id="footer" class="footer">
+
+        <div class="container">
+    
+            <div class="last">
+    
+                <div id="foot" class="col-md-4" data-aos="fade-right">
+                    <a href="#" class="logo"><span>Y</span>our<span>S</span>tory</a>
+                    <p>Make YOUR Story a memorable one by giving a chance to <span>Y</span>our<span>S</span>tory management. </p>
+                </div>
+    
+                <div id="foot" class="col-md-4 text-center" data-aos="fade-up">
+                    <h3>links</h3>
+                   <ul> 
+                     <a href="#home.html">home</a>
+                     <a href="#previous.html">Our Previous Events</a>
+                     <a href="#abt.html">About Us</a>
+                    
+                     
+                    </ul>
+                </div>
+    
+                <div id="foot" class="col-md-4 text-center" data-aos="fade-left">
+                    <h3>share</h3>
+                    <ul>
+                    <a href="#">facebook</a>
+                    <a href="#">twitter</a>
+                    <a href="#">instagram</a>
+                    <a href="#">github</a>
+                </ul>
+                </div>
+    
+                <div id="foot" class="col-md-4 text-center" data-aos="fade-left">
+    
+                <h3>Contact Us</h3>
+                <ul>
+                <a href="#">Phone No.: 8234593389<br></a>
+                <a href="#"> Email Address: yourstory@gmail.com<br></a>
+            </ul>
+                    
+                </div>
+            </div>
+    
+        </div>
+        <div class="res">
+
+            <p>Copyright &copy; V4 | All rights resevered</p>
+        </div>
+    
+    </section>
+
+
+    
+
+
+
+
+
+
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+</body>
+<script>
+    function validate(){
+    var result_text = document.getElementById("result");
+    var num = document.getElementById("num").value;
+    if (num.search(/^[0-9]+$/) == -1 || num.length != 10) {
+        result_text.innerHTML = "invalid mobile number";
+        return;
+    }
+    result_text.innerHTML = "Click on submit!!!";
+
+
+}
+</script>
+
+</html>

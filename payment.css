@@ -1,0 +1,89 @@
+*{padding:0; margin:0; box-sizing: border-box; font-family: sans-serif;}
+header{
+    width: 100vw;
+    min-height: 100vh;
+    background: #dfdff8;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    background: white;
+    max-width: 800px;
+    min-height: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.left{
+    flex-basis: 50%;
+}
+.right{
+    flex-basis: 50%;
+}
+form{
+    padding: 1rem;
+}
+h3{
+    padding-left: 15px;
+    margin-top: 1rem;
+    color: #2c3e50;
+}
+form input[type="text"]{
+    width: 100%;
+    padding: 0.5rem 0.7rem;
+    margin: 0.5rem 0;
+    outline: none;
+}
+#zip{
+display: flex;
+margin-top: 0.5rem;
+width: 50%;
+}
+#zip select{
+    padding: 0.5rem 0.7rem;
+    margin-left: 0.5rem;
+}
+#zip input[type="number"]{
+    padding: 0.5rem 0.7rem;
+}
+#zip1 {
+    display: flex;
+    margin-top: 0.5rem;
+}
+#zip1 select{
+    padding: 0.5rem 0.7rem;
+    margin-top: 0.5rem;
+}
+#zip2 {
+    display: flex;
+}
+input[type="submit"]{
+    width: 50%;
+    padding: 0.7rem 1.5rem;
+    background: #34495e;
+    color: white;
+    border: none;
+    outline: none;
+    margin-top: 1rem;
+    margin-left: 5rem;
+    cursor: pointer;
+}
+input[type="submit"]:hover{
+    background: #2c3e50;
+
+}
+
+#state{
+
+    margin-left: 90%;
+}
+#state1{
+    width: 181%;
+    margin-left: 90%;
+}
+
+#pin{
+    width: 170%;
+}

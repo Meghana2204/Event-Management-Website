@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abyssinica+SIL&family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background-color: #dfdff8;
+        }
+        h1 {
+            text-align: center;
+            font-size: 50px;
+        }
+
+        /* #previous-section {
+            border: 2px solid black;
+        } */
+
+        #Previous {
+            padding: 20px;
+            padding-top: 10px;
+            /* margin: 236px; */
+            margin-top: 50px;
+            border: 1px solid rgb(6, 6, 89);
+            flex-flow: row wrap;
+            justify-content: space-between;
+            align-items: center;
+            align-items: stretch;
+            height: 307px;
+            width: 900px;
+            /* margin-left: 54px; */
+            border-radius: 5px;
+        }
+
+        .previous-item-1 img {
+            height: 172px;
+    width: 200px;
+    display: block;
+    float: left;
+    margin: 52px;
+    border-radius: 20px;
+    margin-left: 10px;
+        }
+        .previous-item-2 img {
+            height:  154px;
+    width: 213px;
+    display: block;
+    float: left;
+    margin: 52px;
+    border-radius: 20px;
+    margin-left: 15px;
+    margin-top: 69px;
+        }
+
+        .suggestion {
+            font-size: 15px;
+            background-color: rgb(6, 6, 89);
+            color: white;
+            width: 80px;
+            height: 18px;
+            margin-left: 263px;
+            text-align: center;
+            /* padding: 20px; */
+            border-radius: 5px;
+            font-family: 'Abyssinica SIL', serif;
+font-family: 'Playfair Display', serif;
+
+            /* font-weight: lighter; */
+        }
+
+        .suggestion-1 {
+            
+                font-size: -17px;
+                background-color: rgb(6, 6, 89);
+                color: white;
+                width: 162px;
+                height: 19px;
+                margin-left: 259px;
+                text-align: center;
+                /* padding: 20px; */
+                border-radius: 5px;
+                font-family: 'Abyssinica SIL', serif;
+font-family: 'Playfair Display', serif;
+                /* font-weight: lighter; */
+            
+        }
+
+        #photo {
+            display: flex;
+            height: 30px;
+
+        }
+
+        .person img {
+            width: 12px;
+            height: 15px;
+            display: inline;
+            float: left;
+            padding: 20px;
+        }
+        .service img {
+            width: 17px;
+            height: 19px;
+            display: inline;
+            float: left;
+            padding: 17px;
+        }
+        .org img{
+            width: 14px;
+            height: 15px;
+            display: inline;
+            float: left;
+            padding: 18px;
+        }
+        .cat img{
+            width: 19px;
+            height: 16px;
+            display: inline;
+            float: left;
+            padding: 18px;
+        }
+
+        #photo ul li {
+            list-style: none;
+            display: inline-block;
+            font-size: 1rem;
+
+        }
+
+        #photo ul {
+            padding-left: 0px;
+            text-align: left;
+
+        }
+
+        .guide img {
+            width: 20px;
+            height: 20px;
+            display: inline;
+            float: left;
+            padding: 17px;
+        }
+
+        .btn {
+            float: right;
+            font-size: 14px;
+            background-color: rgb(6, 6, 89);
+            color: white;
+            width: 94px;
+            height: 29px;
+            margin-left: 239px;
+            text-align: center;
+            /* padding: 20px; */
+            border-radius: 7px;
+            position: relative;
+            top: 0;
+            /* transition: top ease 0.1s; */
+            /* border: 2px solid white; */
+            box-shadow: white;
+        }
+        .btn:hover {
+            cursor: pointer;
+            top: -1px;
+            background-color: rgb(65, 12, 114);
+        }
+        .price{
+            text-align: right;
+            margin-top: -37px;
+            font-weight: bolder;
+        }
+
+        hr {
+            width: 870px;
+        }
+
+        .contact {
+            text-align: right;
+            position: relative;
+  display: inline-block;
+        }
+        .contact p{
+            display: inline;
+        }
+        .contact a {
+            text-decoration: none;
+            color: rgb(6, 6, 89);
+        }
+        /* .hide{
+            display: none;
+            text-align: left;
+    background-color: rgb(197, 197, 250);
+    border: 1px solid black;
+    width: 253px;
+    height: 98px;
+    margin-left: 714px;
+    border-radius: 5px;
+   
+        } */
+        .hide p{
+            margin-top: 4px;
+            padding-left: 15px;
+            
+            /* padding-bottom: 20px; */
+        }
+        .contact .hide{
+            visibility: hidden;
+  width: 265px;
+  height: 77px;
+  background-color: rgb(197, 197, 250);
+  color: black;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top:42px;
+  left: 80%;
+        }
+        .contact:hover .hide{
+            visibility: visible;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="previous-section">
+        <h1 class="h-primary center">Indoor Birthday</h1>
+        <div id="Previous">
+            <div class="previous-item-1">
+                <img src="https://blog.venuelook.com/wp-content/uploads/2022/07/Host-a-Dinner.jpg"
+                    alt="Photo">
+            </div>
+            <div class="suggestion">
+                <h5>Top Pic</h5>
+            </div>
+            <div class="previous-text">
+                <h2 class="h-secondary">Host a Dinner</h2>
+                <div id="photo">
+                    <div class="person">
+                        <img src="https://www.freeiconspng.com/thumbs/person-icon/clipart--person-icon--cliparts-15.png"
+                            alt="Photo">
+                    </div>
+                    <ul>
+                        <li class="item">20 People (Price varies depending on people)</li>
+                    </ul>
+                </div>
+                <div id="photo">
+                    <div class="guide">
+                        <img src="https://cdn3.iconfinder.com/data/icons/restaurants-1/66/12-512.png" alt="Photo">
+                    </div>
+                    <ul>
+                        <li class="item">Catering</li>
+                    </ul>
+                </div>
+                <div id="photo">
+                    <div class="service">
+                        <img src="https://as2.ftcdn.net/v2/jpg/02/14/50/83/1000_F_214508371_gEnK8VcJjotANgEqdAnBz7CXUyjgmtbI.jpg" alt="Photo">
+                    </div>
+                    <ul>
+                        <li class="item">Service</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="price">
+                <p>&#8377 5,199 - 10,999</p>
+            </div>
+            <div class="btn">
+                <a href="../payment.html" target="_parent">
+                    <button class="btn">Book Now</button>
+                </a>
+            </div>
+            <div class="contact">
+                <hr>
+                <p>Contact Us</p>
+                <span class="hide">
+                    <p>
+                        Phone No.: 8234593389<br>
+                        Email Address: yourstory@gmail.com<br>
+                        Instagram Id: @yourstory<br>
+                        FaceBook: yourstory
+                    </p>
+                </span>
+            </div>
+        </div>
+        <div id="Previous">
+            <div class="previous-item-1">
+                <img src="https://www.gannett-cdn.com/media/2021/04/01/USATODAY/usatsports/Reviewed.com-RvEW-27144-boardgames.jpg" alt="Photo">
+            </div>
+            <div class="suggestion">
+                <h5>Top Pic</h5>
+            </div>
+            <div class="previous-text">
+                <h2 class="h-secondary">Game Night</h2>
+                <div id="photo">
+                    <div class="person">
+                        <img src="https://www.freeiconspng.com/thumbs/person-icon/clipart--person-icon--cliparts-15.png"
+                            alt="Photo">
+                    </div>
+                    <ul>
+                        <li class="item">10 People (Price varies depending on people)</li>
+                    </ul>
+                </div>
+                <div id="photo">
+                    <div class="guide">
+                        <img src="https://cdn3.iconfinder.com/data/icons/restaurants-1/66/12-512.png" alt="Photo">
+                    </div>
+                    <ul>
+                        <li class="item">Catering</li>
+                    </ul>
+                </div>
+                <div id="photo">
+                    <div class="org">
+                        <img src="https://cdn-icons-png.flaticon.com/512/76/76828.png" alt="Photo">
+                    </div>
+                    <ul>
+                        <li class="item">Game Organizer</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="price">
+                <p>&#8377 10,599 - 15,999</p>
+            </div>
+            <div class="btn">
+                <a href="../payment.html" target="_parent">
+                    <button class="btn">Book Now</button>
+                </a>
+            </div>
+            <div class="contact">
+                <hr>
+                <p>Contact Us</p>
+                <span class="hide">
+                    <p>
+                        Phone No.: 8234593389<br>
+                        Email Address: yourstory@gmail.com<br>
+                        Instagram Id: @yourstory<br>
+                        FaceBook: yourstory
+                    </p>
+                </span>
+            </div>
+        </div>
+        <div id="Previous">
+            <div class="previous-item-2">
+                <img src="https://blog.venuelook.com/wp-content/uploads/2022/07/Costume-Party-768x432.jpeg" alt="Photo">
+            </div>
+            <div class="suggestion-1">
+                <h5>Recomended For Family</h5>
+            </div>
+            <div class="previous-text">
+                <h2 class="h-secondary">Costume Party</h2>
+                <div id="photo">
+                    <div class="person">
+                        <img src="https://www.freeiconspng.com/thumbs/person-icon/clipart--person-icon--cliparts-15.png"
+                            alt="Photo">
+                    </div>
+                    <ul>
+                        <li class="item">15 People (Price varies depending on people)</li>
+                    </ul>
+                </div>
+                <div id="photo">
+                    <div class="guide">
+                        <img src="https://colibriwp.com/blog/wp-content/uploads/2019/10/icon1.png" alt="Photo">
+                    </div>
+                    <ul>
+                        <li class="item">Photographer</li>
+                    </ul>
+                </div>
+                <div id="photo">
+                    <div class="cat">
+                        <img src="https://cdn3.iconfinder.com/data/icons/restaurants-1/66/12-512.png" alt="Photo">
+                    </div>
+                    <ul>
+                        <li class="item">Catering</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="price">
+                <p>&#8377 12,399 - 17,599</p>
+            </div>
+            <div class="btn">
+                <a href="../payment.html" target="_parent">
+                    <button class="btn">Book Now</button>
+                </a>
+            </div>
+            <div class="contact">
+                <hr>
+                <p>Contact Us</p>
+                <span class="hide">
+                    <p>
+                        Phone No.: 8234593389<br>
+                        Email Address: yourstory@gmail.com<br>
+                        Instagram Id: @yourstory<br>
+                        FaceBook: yourstory
+                    </p>
+                </span>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abyssinica+SIL&family=Playfair+Display:ital@0;1&display=swap"
+        rel="stylesheet">
+    <style>
+        body{
+            background-color: #dfdff8;
+        }
+        h1 {
+            text-align: center;
+            font-size: 50px;
+        }
+
+        /* #previous-section {
+            border: 2px solid black;
+        } */
+
+        #Previous {
+            padding: 20px;
+            padding-top: 10px;
+            /* margin: 236px; */
+            margin-top: 50px;
+            border: 1px solid rgb(6, 6, 89);
+            flex-flow: row wrap;
+            justify-content: space-between;
+            align-items: center;
+            align-items: stretch;
+            height: 290px;
+            width: 900px;
+            /* margin-left: 54px; */
+            border-radius: 5px;
+        }
+
+        .previous-item-1 img {
+            height: 200px;
+            width: 200px;
+            display: block;
+            float: left;
+            margin: 30px;
+            border-radius: 20px;
+            margin-left: 10px;
+        }
+
+        .suggestion {
+            font-size: 15px;
+            background-color: rgb(6, 6, 89);
+            color: white;
+            width: 80px;
+            height: 18px;
+            margin-left: 239px;
+            text-align: center;
+            /* padding: 20px; */
+            border-radius: 5px;
+            font-family: 'Abyssinica SIL', serif;
+            font-family: 'Playfair Display', serif;
+
+            /* font-weight: lighter; */
+        }
+
+        .suggestion-1 {
+
+            font-size: -17px;
+            background-color: rgb(6, 6, 89);
+            color: white;
+            width: 162px;
+            height: 19px;
+            margin-left: 239px;
+            text-align: center;
+            /* padding: 20px; */
+            border-radius: 5px;
+            font-family: 'Abyssinica SIL', serif;
+            font-family: 'Playfair Display', serif;
+            /* font-weight: lighter; */
+
+        }
+
+        #photo {
+            display: flex;
+            height: 30px;
+
+        }
+
+        .person img {
+            width: 15px;
+            height: 18px;
+            display: inline;
+            float: left;
+            padding: 17px;
+        }
+
+        #photo ul li {
+            list-style: none;
+            display: inline-block;
+            font-size: 1rem;
+
+        }
+
+        #photo ul {
+            padding-left: 0px;
+            text-align: left;
+
+        }
+
+        .guide img {
+            width: 20px;
+            height: 20px;
+            display: inline;
+            float: left;
+            padding: 17px;
+        }
+
+        .btn {
+            float: right;
+            font-size: 14px;
+            background-color: rgb(6, 6, 89);
+            color: white;
+            width: 94px;
+            height: 29px;
+            margin-left: 239px;
+            text-align: center;
+            /* padding: 20px; */
+            border-radius: 7px;
+            position: relative;
+            top: 0;
+            /* transition: top ease 0.1s; */
+            /* border: 2px solid white; */
+            box-shadow: white;
+        }
+        .btn a{
+            text-decoration: none;
+            color: white;
+        }
+        .btn:hover {
+            cursor: pointer;
+            top: -1px;
+            background-color: rgb(65, 12, 114);
+        }
+
+        .price {
+            text-align: right;
+            margin-top: -37px;
+            font-weight: bolder;
+        }
+
+        hr {
+            width: 870px;
+        }
+
+        .contact {
+            text-align: right;
+            position: relative;
+  display: inline-block;
+        }
+        .contact p{
+            display: inline;
+        }
+        .contact a {
+            text-decoration: none;
+            color: rgb(6, 6, 89);
+        }
+        /* .hide{
+            display: none;
+            text-align: left;
+    background-color: rgb(197, 197, 250);
+    border: 1px solid black;
+    width: 253px;
+    height: 98px;
+    margin-left: 714px;
+    border-radius: 5px;
+   
+        } */
+        .hide p{
+            margin-top: 4px;
+            padding-left: 15px;
+            
+            /* padding-bottom: 20px; */
+        }
+        .contact .hide{
+            visibility: hidden;
+  width: 265px;
+  height: 77px;
+  background-color: rgb(197, 197, 250);
+  color: black;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top:42px;
+  left: 80%;
+        }
+        .contact:hover .hide{
+            visibility: visible;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="previous-section">
+        <h1 class="h-primary center">Destination Birthday</h1>
+        <div id="Previous">
+            <div class="previous-item-1">
+                <img src="https://divinepartyconcepts.com/wp-content/uploads/2022/06/a-group-of-people-sky-diving-scaled.jpg"
+                    alt="Photo">
+            </div>
+            <div class="suggestion">
+                <h5>Top Pic</h5>
+            </div>
+            <div class="previous-text">
+                <h2 class="h-secondary">Sky Diving</h2>
+                <div id="photo">
+                    <div class="person">
+                        <img src="https://www.freeiconspng.com/thumbs/person-icon/clipart--person-icon--cliparts-15.png"
+                            alt="Photo">
+                    </div>
+                    <ul>
+                        <li class="item">5 People (Price varies depending on people)</li>
+                    </ul>
+                </div>
+                <div id="photo">
+                    <div class="guide">
+                        <img src="https://static.thenounproject.com/png/3359819-200.png" alt="Photo">
+                    </div>
+                    <ul>
+                        <li class="item">Guide</li>
+                    </ul>
+                </div>
+                <div id="photo">
+                    <div class="person">
+                        <img src="https://static.thenounproject.com/png/1760855-200.png" alt="Photo">
+                    </div>
+                    <ul>
+                        <li class="item">2 Days 1 Night</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="price">
+                <p>&#8377 10,099 - 15,999</p>
+            </div>
+            <div class="btn">
+                <a href="../payment.html" target="_parent">
+                    <button class="btn">Book Now</button>
+                </a>
+            </div>
+            <div class="contact">
+                <hr>
+                <p>Contact Us</p>
+                <span class="hide">
+                    <p>
+                        Phone No.: 8234593389<br>
+                        Email Address: yourstory@gmail.com<br>
+                        Instagram Id: @yourstory<br>
+                        FaceBook: yourstory
+                    </p>
+                </span>
+            </div>
+        </div>
+        <div id="Previous">
+            <div class="previous-item-1">
+                <img src="https://i.pinimg.com/736x/1c/18/31/1c1831aa89de39f0451baa0b311902e2.jpg" alt="Photo">
+            </div>
+            <div class="suggestion">
+                <h5>Top Pic</h5>
+            </div>
+            <div class="previous-text">
+                <h2 class="h-secondary">Hiking Fun</h2>
+                <div id="photo">
+                    <div class="person">
+                        <img src="https://www.freeiconspng.com/thumbs/person-icon/clipart--person-icon--cliparts-15.png"
+                            alt="Photo">
+                    </div>
+                    <ul>
+                        <li class="item">5 People (Price varies depending on people)</li>
+                    </ul>
+                </div>
+                <div id="photo">
+                    <div class="guide">
+                        <img src="https://static.thenounproject.com/png/3359819-200.png" alt="Photo">
+                    </div>
+                    <ul>
+                        <li class="item">Guide</li>
+                    </ul>
+                </div>
+                <div id="photo">
+                    <div class="person">
+                        <img src="https://static.thenounproject.com/png/1760855-200.png" alt="Photo">
+                    </div>
+                    <ul>
+                        <li class="item">2 Days 1 Night</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="price">
+                <p>&#8377 8,099 - 12,999</p>
+            </div>
+            <div class="btn">
+                <a href="../payment.html" target="_parent">
+                    <button class="btn">Book Now</button>
+                </a>
+            </div>
+            <div class="contact">
+                <hr>
+                <p>Contact Us</p>
+                <span class="hide">
+                    <p>
+                        Phone No.: 8234593389<br>
+                        Email Address: yourstory@gmail.com<br>
+                        Instagram Id: @yourstory<br>
+                        FaceBook: yourstory
+                    </p>
+                </span>
+            </div>
+        </div>
+        <div id="Previous">
+            <div class="previous-item-1">
+                <img src="http://www.holidify.com/blog/wp-content/uploads/2016/01/goa-1.jpg" alt="Photo">
+            </div>
+            <div class="suggestion-1">
+                <h5>Recomended For Family</h5>
+            </div>
+            <div class="previous-text">
+                <h2 class="h-secondary">BLow-Key Beach Day</h2>
+                <div id="photo">
+                    <div class="person">
+                        <img src="https://www.freeiconspng.com/thumbs/person-icon/clipart--person-icon--cliparts-15.png"
+                            alt="Photo">
+                    </div>
+                    <ul>
+                        <li class="item">5 People (Price varies depending on people)</li>
+                    </ul>
+                </div>
+                <div id="photo">
+                    <div class="guide">
+                        <img src="https://static.thenounproject.com/png/3359819-200.png" alt="Photo">
+                    </div>
+                    <ul>
+                        <li class="item">Guide</li>
+                    </ul>
+                </div>
+                <div id="photo">
+                    <div class="person">
+                        <img src="https://static.thenounproject.com/png/1760855-200.png" alt="Photo">
+                    </div>
+                    <ul>
+                        <li class="item">2 Days 1 Night</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="price">
+                <p>&#8377 9,099 - 13,999</p>
+            </div>
+            <div class="btn">
+                <a href="../payment.html" target="_parent">
+                    <button class="btn">Book Now</button>
+                </a>
+            </div>
+            <div class="contact">
+                <hr>
+                <p>Contact Us</p>
+                <span class="hide">
+                    <p>
+                        Phone No.: 8234593389<br>
+                        Email Address: yourstory@gmail.com<br>
+                        Instagram Id: @yourstory<br>
+                        FaceBook: yourstory
+                    </p>
+                </span>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

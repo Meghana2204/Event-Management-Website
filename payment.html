@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>payment</title>
+    <link rel="stylesheet" type="text/css" href="payment.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="left">
+                <h3>BILLING ADDRESS</h3>
+                <form action="http://localhost:3000/payment.php" method="post">
+                    Full name
+                    <input type="text" name="name" placeholder="Enter name">
+                    Email
+                    <input type="text" name="email" placeholder="Enter Email">
+                    Address
+                    <input type="text" name="address" placeholder="Enter address">
+                    <input type="text" name="city" placeholder="Enter city">
+
+                    <div id="zip">
+                        <label>
+                            PinCode
+                            <input type="text" name="pin" placeholder="Enter PinCode" id="pin">
+                        </label>
+                        <label>
+                            <span id="state"> State</span>
+                            <input type="text" name="state" placeholder="Enter State" id="state1">
+
+                            </select>
+                        </label>
+                    </div>
+
+
+
+            </div>
+            <div class="right">
+                <h3>PAYMENT</h3>
+
+                Accepted Card
+                <br>
+                <img src="data:image/jpeg;base64,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"
+                    width="100">
+                <br>
+
+                Credit card number
+                <input type="text" name="" placeholder="Enter card number">
+                <div id="zip1">
+                    <label>
+                        Exp month
+                        <select>
+                            <option>Choose month..</option>
+                            <option>Jan</option>
+                            <option>feb</option>
+                            <option>mar</option>
+                            <option>apr</option>
+                            <option>may</option>
+                            <option>jun</option>
+                            <option>jul</option>
+                            <option>aug</option>
+                            <option>sep</option>
+                            <option>oct</option>
+                            <option>nov</option>
+                            <option>dec</option>
+                        </select>
+                    </label>
+                    <label>
+                        Exp Year
+                        <select>
+                            <option>Choose year</option>
+                            <option>2022</option>
+                            <option>2023</option>
+                            <option>2024</option>
+                            <option>2025</option>
+                        </select>
+                    </label>
+                </div>
+                <br>
+                <div id="zip2">
+                    <label>
+                        CVV
+                        <input type="password" name="" placeholder="CVV">
+                    </label>
+                </div>
+
+                <input type="submit" name="" value="Pay">
+
+
+                </form>
+
+
+
+            </div>
+        </div>
+    </header>
+
+</body>
+
+</html>

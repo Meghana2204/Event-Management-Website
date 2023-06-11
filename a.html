@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .headingbox {
+            background-color: bisque;
+            display: flex;
+            width: 390px;
+        }
+
+        .heading {
+            display: flex;
+        }
+
+        .heading p {
+            margin-right: 100px;
+        }
+
+        .headpic img {
+            float: right;
+            width: 172px;
+            height: 100px;
+            top: 0px;
+            clip-path: ellipse(99% 140px at 100% 50%);
+        }
+
+        .grid a {
+            text-decoration: none;
+            color: black;
+            display: grid;
+            grid-template-columns: 50% 50%
+        }
+
+        .grid a::before {
+            content: "";
+            position: absolute;
+            background-color: rgb(255, 255, 255);
+            top: -5px;
+            left: 100px;
+            height: 11.314px;
+            width: 11.314px;
+            transform: rotate(45deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box">
+        <div class="box1">
+            <div class="headingbox">
+                <div class="heading">
+                    <p>This is a heading<br>
+                        this is sub heading</p>
+                </div>
+                <div class="headpic">
+                    <img src="light.jpg" alt="Photo">
+                </div>
+            </div>
+            <div class="grid">
+                <a href="https://facebook.com">facebook</a>
+                <a href="https://youtube.com">youtube</a>
+                <a href="https://twitter.com">twitter</a>
+                <a href="https://instagram.com">instagram</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
